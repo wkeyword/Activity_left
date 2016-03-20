@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private ImageView mFace;
@@ -36,5 +37,13 @@ public class MainActivity extends AppCompatActivity {
             mFace.setImageURI(uri);
             System.out.println("执行了这个方法..................................");
         }
+        if (resultCode==RESULT_OK && requestCode==7){
+            Toast.makeText(getApplicationContext(),data.getStringExtra("info"),Toast.LENGTH_SHORT).show();
+        }
+    }
+
+    public void otheraty(View view) {
+        Intent intent=new Intent(this,SecondActivity.class);
+        startActivityForResult(intent,7);
     }
 }

@@ -18,10 +18,20 @@
         android:onClick="changeImage"
         android:text="设置头像" />
     <ImageView
-        android:layout_width="200dp"
-        android:layout_height="200dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_below="@id/setImage"
         android:layout_marginTop="10dp"
         android:id="@+id/head_iv"/>
+
+    <Button
+        android:id="@+id/otheraty"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:textColor="#33c67f"
+        android:layout_below="@id/head_iv"
+        android:onClick="otheraty"
+        android:text="进入另外一个aty" />
 
 </RelativeLayout>

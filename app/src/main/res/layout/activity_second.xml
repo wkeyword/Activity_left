@@ -9,4 +9,13 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.changzheng.activity_left.SecondActivity">
 
+
+    <Button
+        android:id="@+id/backdata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00000000"
+        android:textColor="#33c67f"
+        android:onClick="backdata"
+        android:text="返回数据" />
 </RelativeLayout>
